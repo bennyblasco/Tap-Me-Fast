@@ -18,6 +18,7 @@ class ViewController: UIViewController {
 
     @IBAction func button(_ sender: Any) {
         textLabel.text = "Tap me fast"
+        textLabel.text = "Tap me again"
     }
     
 }
