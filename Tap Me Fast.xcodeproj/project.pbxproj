@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		183E6D1124C4FB9100ACA7FC /* PORKYS_.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 183E6D1024C4FB9100ACA7FC /* PORKYS_.TTF */; };
 		18AC8C7D24BFB5470008A369 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AC8C7C24BFB5470008A369 /* AppDelegate.swift */; };
 		18AC8C7F24BFB5470008A369 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AC8C7E24BFB5470008A369 /* SceneDelegate.swift */; };
 		18AC8C8124BFB5470008A369 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AC8C8024BFB5470008A369 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		183E6D1024C4FB9100ACA7FC /* PORKYS_.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = PORKYS_.TTF; path = "../../../../Downloads/Tap Me Fast/PORKYS_.TTF"; sourceTree = "<group>"; };
 		18AC8C7924BFB5470008A369 /* Tap Me Fast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tap Me Fast.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18AC8C7C24BFB5470008A369 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18AC8C7E24BFB5470008A369 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				18AC8C8024BFB5470008A369 /* ViewController.swift */,
 				18AC8C8224BFB5470008A369 /* Main.storyboard */,
 				18AC8C8524BFB54D0008A369 /* Assets.xcassets */,
+				183E6D1024C4FB9100ACA7FC /* PORKYS_.TTF */,
 				18AC8C8724BFB54D0008A369 /* LaunchScreen.storyboard */,
 				18AC8C8A24BFB54D0008A369 /* Info.plist */,
 			);
@@ -127,6 +130,7 @@
 			files = (
 				18AC8C8924BFB54D0008A369 /* LaunchScreen.storyboard in Resources */,
 				18AC8C8624BFB54D0008A369 /* Assets.xcassets in Resources */,
+				183E6D1124C4FB9100ACA7FC /* PORKYS_.TTF in Resources */,
 				18AC8C8424BFB5470008A369 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
