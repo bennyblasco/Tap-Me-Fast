@@ -27,9 +27,18 @@ class ViewController: UIViewController {
     }
 
     @IBAction func startGameButtonWasPressed(_ sender: Any) {
-        
+        if timerInt == 10{
+            timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(startCounter), userInfo: nil, repeats: true)
+        }
     }
     
-    
+    @objc func startCounter(){
+        timerInt -= 1
+        timerLabel.text = String(timerInt)
+        
+        if timerInt == 0 {
+            timer.invalidate()
+        }
+    }
 }
 
