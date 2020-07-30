@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -17,69 +17,78 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Tap_Me_Fast" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="h16-RZ-7vx">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap Me Fast" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="peY-5b-G28">
-                                <rect key="frame" x="16" y="64" width="343" height="187"/>
-                                <fontDescription key="fontDescription" name="Porkys" family="Porky's" pointSize="52"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dgJ-00-AuO">
-                                <rect key="frame" x="27" y="259" width="321" height="115"/>
+                                <rect key="frame" x="27" y="335.5" width="360" height="115"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.39784888698630139" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="115" id="DxF-3m-g8K"/>
+                                    <constraint firstAttribute="height" constant="115" id="pHu-eW-xGh"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Porkys" family="Porky's" pointSize="50"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="67x-J4-zYR">
-                                <rect key="frame" x="27" y="412" width="321" height="115"/>
+                                <rect key="frame" x="27" y="485.5" width="360" height="115"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.39942744006849318" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="115" id="a2M-2M-Cka"/>
+                                    <constraint firstAttribute="height" constant="115" id="EhX-Vn-qrb"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Porkys" family="Porky's" pointSize="50"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AQj-bm-cpY">
-                                <rect key="frame" x="27" y="571" width="321" height="187"/>
-                                <color key="backgroundColor" red="0.57380741830000004" green="0.56553578380000002" blue="0.0" alpha="0.4002836044520548" colorSpace="custom" customColorSpace="sRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZS-wG-IO8">
+                                <rect key="frame" x="27" y="655.5" width="360" height="177.5"/>
+                                <color key="backgroundColor" red="0.57380741830000004" green="0.56553578380000002" blue="0.0" alpha="0.4002836045" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Porkys" family="Porky's" pointSize="50"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="startGameButtonWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UB2-5I-49A"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap Me Fast" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.45000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="peY-5b-G28">
+                                <rect key="frame" x="16" y="110" width="382" height="177.5"/>
+                                <fontDescription key="fontDescription" name="Porkys" family="Porky's" pointSize="52"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AQj-bm-cpY" secondAttribute="trailing" constant="27" id="0zt-e4-Pmp"/>
-                            <constraint firstItem="67x-J4-zYR" firstAttribute="top" secondItem="dgJ-00-AuO" secondAttribute="bottom" constant="38" id="79d-Xm-fay"/>
-                            <constraint firstItem="h16-RZ-7vx" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Amd-7m-5e0"/>
-                            <constraint firstItem="peY-5b-G28" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Efp-2i-P8Q"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="peY-5b-G28" secondAttribute="trailing" constant="16" id="Er6-Vu-BgP"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="AQj-bm-cpY" secondAttribute="bottom" constant="20" id="GbW-2c-ywR"/>
-                            <constraint firstItem="h16-RZ-7vx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="IFP-e4-EXO"/>
-                            <constraint firstItem="h16-RZ-7vx" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="34" id="LXP-4J-eNQ"/>
-                            <constraint firstItem="AQj-bm-cpY" firstAttribute="top" secondItem="67x-J4-zYR" secondAttribute="bottom" constant="44" id="Mvn-hl-ufX"/>
-                            <constraint firstItem="AQj-bm-cpY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="27" id="S3y-Wz-KEz"/>
-                            <constraint firstItem="dgJ-00-AuO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="27" id="du9-MA-PTR"/>
-                            <constraint firstItem="67x-J4-zYR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="27" id="ezk-yb-z3Z"/>
-                            <constraint firstItem="dgJ-00-AuO" firstAttribute="top" secondItem="peY-5b-G28" secondAttribute="bottom" constant="8" id="ha0-XG-Hks"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dgJ-00-AuO" secondAttribute="trailing" constant="27" id="ivN-jy-wdq"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="67x-J4-zYR" secondAttribute="trailing" constant="27" id="kEW-iP-aBo"/>
-                            <constraint firstItem="h16-RZ-7vx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-44" id="mw6-0P-xYu"/>
-                            <constraint firstItem="AQj-bm-cpY" firstAttribute="height" secondItem="peY-5b-G28" secondAttribute="height" id="qDC-9X-Vek"/>
-                            <constraint firstItem="peY-5b-G28" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="zta-ql-GNd"/>
+                            <constraint firstItem="peY-5b-G28" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="66" id="1E7-8b-YAX"/>
+                            <constraint firstItem="h16-RZ-7vx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6ZA-0v-elu"/>
+                            <constraint firstItem="67x-J4-zYR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="27" id="6f7-I8-CBv"/>
+                            <constraint firstAttribute="bottom" secondItem="h16-RZ-7vx" secondAttribute="bottom" id="6vc-S8-7Mw"/>
+                            <constraint firstItem="peY-5b-G28" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="DDs-kl-Z65"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dgJ-00-AuO" secondAttribute="trailing" constant="27" id="GPU-tD-IKS"/>
+                            <constraint firstItem="dgJ-00-AuO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="27" id="HFC-AM-PGb"/>
+                            <constraint firstItem="bZS-wG-IO8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="27" id="IMp-MY-40g"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="67x-J4-zYR" secondAttribute="trailing" constant="27" id="MfE-Tz-f48"/>
+                            <constraint firstItem="h16-RZ-7vx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="O5S-Wi-o5O"/>
+                            <constraint firstItem="dgJ-00-AuO" firstAttribute="top" secondItem="peY-5b-G28" secondAttribute="bottom" constant="48" id="Si6-9c-bJf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="peY-5b-G28" secondAttribute="trailing" constant="16" id="XjM-W8-5vG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bZS-wG-IO8" secondAttribute="trailing" constant="27" id="bog-Pn-nyU"/>
+                            <constraint firstItem="67x-J4-zYR" firstAttribute="top" secondItem="dgJ-00-AuO" secondAttribute="bottom" constant="35" id="lAx-EB-z5R"/>
+                            <constraint firstItem="h16-RZ-7vx" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="lDF-El-3O1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bZS-wG-IO8" secondAttribute="bottom" constant="29" id="pZH-8B-DwC"/>
+                            <constraint firstItem="bZS-wG-IO8" firstAttribute="top" secondItem="67x-J4-zYR" secondAttribute="bottom" constant="55" id="qUc-x9-e1u"/>
+                            <constraint firstItem="bZS-wG-IO8" firstAttribute="height" secondItem="peY-5b-G28" secondAttribute="height" id="vBv-cn-tMC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="scoreLabel" destination="67x-J4-zYR" id="0ch-os-ZDc"/>
+                        <outlet property="startGameButton" destination="bZS-wG-IO8" id="srx-SB-OZe"/>
+                        <outlet property="timerLabel" destination="dgJ-00-AuO" id="bOH-vI-SNd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
