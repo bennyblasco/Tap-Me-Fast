@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var startGameButton: UIButton!
     
     var timer = Timer()
-    var timerInt = 0
+    var timerInt = 10
     var scoreInt = 0
     var gameInt = 0 
     
