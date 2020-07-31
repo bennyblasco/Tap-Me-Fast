@@ -66,7 +66,7 @@ class ViewController: UIViewController {
             startGameButton.isEnabled = false
             startGameButton.alpha = 0.5
             
-            Timer.scheduledTimer(timeInterval: 4, target: self, selector: #selector(restart), userInfo: nil, repeats: false)
+            Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(restart), userInfo: nil, repeats: false)
 //            startGameButton.setTitle("Wait for 4 seconds", for: UIControl.State.normal)
             startGameButton.setTitle("Restart", for: UIControl.State.normal)
             
