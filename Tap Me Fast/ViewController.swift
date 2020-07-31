@@ -28,7 +28,7 @@ class ViewController: UIViewController {
 
     @IBAction func startGameButtonWasPressed(_ sender: Any) {
         if timerInt == 10{
-                startGameButton.setTitle("Start", for: UIControl.State.normal)
+            //startGameButton.setTitle("Start", for: UIControl.State.normal)
             timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(startCounter), userInfo: nil, repeats: true)
             
             startGameButton.isEnabled = false
