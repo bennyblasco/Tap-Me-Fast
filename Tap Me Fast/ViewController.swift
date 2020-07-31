@@ -28,7 +28,27 @@ class ViewController: UIViewController {
 
     @IBAction func startGameButtonWasPressed(_ sender: Any) {
         if timerInt == 10{
+                startGameButton.setTitle("Start", for: UIControl.State.normal)
             timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(startCounter), userInfo: nil, repeats: true)
+            
+            startGameButton.isEnabled = false
+            startGameButton.alpha = 0.5
+        }
+        if timerInt == 0{
+            
+            scoreInt = 0
+            timerInt = 10
+            startGameButton.isEnabled = true
+            startGameButton.alpha = 1
+            startGameButton.setTitle("Restart", for: UIControl.State.normal)
+            
+            gameInt = 0
+        }
+        
+        if gameInt == 1{
+            scoreInt += 1
+            scoreLabel.text = String(scoreInt)
+            
         }
     }
     
@@ -36,9 +56,20 @@ class ViewController: UIViewController {
         timerInt -= 1
         timerLabel.text = String(timerInt)
         
+        gameInt = 1
+        startGameButton.isEnabled = true
+        startGameButton.alpha = 1
+        
         if timerInt == 0 {
             timer.invalidate()
+            startGameButton.isEnabled = false
+            startGameButton.alpha = 0.5
+            
         }
+    }
+    
+    @objc func restart(){
+        gameInt = 0
     }
 }
 
