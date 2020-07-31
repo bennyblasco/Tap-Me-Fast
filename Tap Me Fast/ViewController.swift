@@ -34,42 +34,49 @@ class ViewController: UIViewController {
             startGameButton.isEnabled = false
             startGameButton.alpha = 0.5
         }
-        if timerInt == 0{
-            
-            scoreInt = 0
-            timerInt = 10
-            startGameButton.isEnabled = true
-            startGameButton.alpha = 1
-            startGameButton.setTitle("Restart", for: UIControl.State.normal)
-            
-            gameInt = 0
-        }
         
         if gameInt == 1{
             scoreInt += 1
             scoreLabel.text = String(scoreInt)
             
+        }else{
+            timerInt = 10
+            scoreInt = 0
+            timerLabel.text = String(timerInt)
+            scoreLabel.text = String(scoreInt)
+            startGameButton.setTitle("Start", for: UIControl.State.normal)
         }
     }
     
     @objc func startCounter(){
+        startGameButton.isEnabled = true
+        startGameButton.alpha = 1
+        startGameButton.setTitle("Tap", for: UIControl.State.normal)
+        
         timerInt -= 1
         timerLabel.text = String(timerInt)
         
         gameInt = 1
-        startGameButton.isEnabled = true
-        startGameButton.alpha = 1
+//        startGameButton.isEnabled = true
+//        startGameButton.alpha = 1
+//        startGameButton.setTitle("Tap", for: UIControl.State.normal)
         
         if timerInt == 0 {
             timer.invalidate()
             startGameButton.isEnabled = false
             startGameButton.alpha = 0.5
             
+            Timer.scheduledTimer(timeInterval: 4, target: self, selector: #selector(restart), userInfo: nil, repeats: false)
+//            startGameButton.setTitle("Wait for 4 seconds", for: UIControl.State.normal)
+            startGameButton.setTitle("Restart", for: UIControl.State.normal)
+            
         }
     }
     
     @objc func restart(){
         gameInt = 0
+        startGameButton.isEnabled = true
+        startGameButton.alpha = 1
     }
 }
 
